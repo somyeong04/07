@@ -4,18 +4,16 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 
+int counter;
+
+void set_counter()
+{
+	counter = 20;
+}
 int main(void)
 {
-   int i=10;
-   printf("CO¨ùo E¡ÌAa Au i=%d\n", i);
-   inc(i);
-   printf("CO¨ùo E¡ÌAa EA i=%d\n", i);
-   
-   return 0;
-}
-
-int inc(int counter)
-{
-   counter++;
-   return counter;
+	printf("counter=%d\n", counter);
+	set_counter();
+	printf("counter=%d\n", counter);
+	return 0;
 }
