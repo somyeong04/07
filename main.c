@@ -6,16 +6,16 @@
 
 int main(void)
 {
-	
-	int i;
-
-	for(i=0; i<5; i++)
-	{
-		static int temp = 1;
-		printf("temp = %d\n", temp);
-		temp++;
-	}
-	
-	return 0;
+   int i=10;
+   printf("CO¨ùo E¡ÌAa Au i=%d\n", i);
+   inc(i);
+   printf("CO¨ùo E¡ÌAa EA i=%d\n", i);
+   
+   return 0;
 }
 
+int inc(int counter)
+{
+   counter++;
+   return counter;
+}
